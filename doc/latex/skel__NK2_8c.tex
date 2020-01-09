@@ -1,0 +1,23 @@
+\section{skel\_\-NK2.c File Reference}
+\label{skel__NK2_8c}\index{skel\_\-NK2.c@{skel\_\-NK2.c}}
+parallel 2D binary curvilinear skeleton 
+
+
+
+\subsection{Detailed Description}
+parallel 2D binary curvilinear skeleton 
+
+{\bf Usage:} skel\_\-NK2 in.pgm nsteps [inhibit] out.pgm
+
+{\bf Description:} Parallel 2D binary thinning or curvilinear skeleton. The parameter {\bf nsteps} gives, if positive, the number of parallel thinning steps to be processed. If the value given for {\bf nsteps} equals -1, the thinning is continued until stability.
+
+If the parameter {\bf inhibit} is given and is a binary image name, then the points of this image will be left unchanged.
+
+Reference: G. Bertrand and M. Couprie, \char`\"{}Two-dimensional thinning algorithms based on critical kernels\char`\"{}, {\em  Journal of Mathematical Imaging and Vision\/}, submitted, 2006. {\tt Preprint: IGM2006-02}.
+
+{\bf Types supported:} byte 2d
+
+{\bf Category:} topobin
+
+\begin{Desc}
+\item[Author:]Michel Couprie \end{Desc}

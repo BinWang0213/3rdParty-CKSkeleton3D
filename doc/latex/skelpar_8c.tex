@@ -1,0 +1,29 @@
+\section{skelpar.c File Reference}
+\label{skelpar_8c}\index{skelpar.c@{skelpar.c}}
+parallel binary skeleton 
+
+
+
+\subsection{Detailed Description}
+parallel binary skeleton 
+
+{\bf Usage:} skelpar in.pgm algorithm nsteps [inhibit] out.pgm
+
+{\bf Description:} Parallel binary thinning or skeleton. The parameter {\bf nsteps} gives, if positive, the number of parallel thinning steps to be processed. If the value given for {\bf nsteps} equals -1, the thinning is continued until stability.
+
+The parameter {\bf algorithm} is a numerical code indicating which method will be used for the thinning. The possible choices are: \begin{itemize}
+\item 0: Pavlidis 1981 \item 1: Eckhardt and Maderlechner 1993 \item 2: Couprie and Bertrand, ultimate (MK2) \item 3: Couprie and Bertrand, curvilinear \item 4: Couprie and Bertrand, curvilinear with reconstruction property (AK2) \item 5: Rutovitz 1966 [DOES NOT PRESERVE TOPOLOGY] \item 6: Zhang and Wang 1988 [DOES NOT PRESERVE TOPOLOGY] \item 7: Han, La and Rhee \item 8: Guo and Hall 1992 (1) \item 9: Guo and Hall 1992 (2) \item 10: Guo and Hall 1992 (3) \item 11: Chin and Wan and Stover and Iverson 1987 \item 12: Jang and Chin 1992 [DOES NOT PRESERVE TOPOLOGY] \item 13: Jang and Chin (correction mc) \item 14: MNS preservation \item 16: Choy, Choy and Siu 1995 [DOES NOT PRESERVE TOPOLOGY] \item 17: Bernard and Manzanera 1999 \item 18: Holt et al. 1987 \item 19: Hall 1989 \item 20: Wu and Tsai 1992 [DOES NOT PRESERVE TOPOLOGY] \item 21: Manzanera and Bernard (variant by GB) \item 23: Bertrand curvilinear with reconstruction, symmetrical \item 24: Rosenfeld directionnel \item 25: Experimental\end{itemize}
+If the parameter {\bf inhibit} is given and is a binary image name, then the points of this image will be left unchanged.
+
+{\bf Warning:} The object must not have any point on the frame of the image.
+
+References:\par
+ [COU05] M. Couprie, Note on fifteen 2D parallel thinning algorithms, IGM2006-01\}, Universit$\backslash$'e de Marne-la-Vall$\backslash$'ee, 2006, {\tt http://igm.univ-mlv.fr/LabInfo/rapportsInternes/2006/01.pdf}\par
+
+
+{\bf Types supported:} byte 2d
+
+{\bf Category:} topobin
+
+\begin{Desc}
+\item[Author:]Michel Couprie \end{Desc}

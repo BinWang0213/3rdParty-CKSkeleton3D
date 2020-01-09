@@ -1,0 +1,23 @@
+\section{skel\_\-MK3.c File Reference}
+\label{skel__MK3_8c}\index{skel\_\-MK3.c@{skel\_\-MK3.c}}
+parallel 3D binary ultimate skeleton 
+
+
+
+\subsection{Detailed Description}
+parallel 3D binary ultimate skeleton 
+
+{\bf Usage:} skel\_\-MK3 in.pgm nsteps [inhibit] out.pgm
+
+{\bf Description:} Parallel 3D binary thinning or ultimate skeleton. The parameter {\bf nsteps} gives, if positive, the number of parallel thinning steps to be processed. If the value given for {\bf nsteps} equals -1, the thinning is continued until stability.
+
+If the parameter {\bf inhibit} is given and is a binary image name, then the points of this image will be left unchanged.
+
+Reference: G. Bertrand and M. Couprie, \char`\"{}New 3D parallel thinning algorithms based on critical kernels\char`\"{}, {\em Discrete geometry for computer imagery\/}, Lecture Notes in Computer Science, Vol.~4245, pp.~580-591, Springer, 2006.
+
+{\bf Types supported:} byte 3d
+
+{\bf Category:} topobin
+
+\begin{Desc}
+\item[Author:]Michel Couprie \end{Desc}

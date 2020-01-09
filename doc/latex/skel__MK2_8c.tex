@@ -1,0 +1,23 @@
+\section{skel\_\-MK2.c File Reference}
+\label{skel__MK2_8c}\index{skel\_\-MK2.c@{skel\_\-MK2.c}}
+parallel 2D binary ultimate skeleton 
+
+
+
+\subsection{Detailed Description}
+parallel 2D binary ultimate skeleton 
+
+{\bf Usage:} skel\_\-MK2 in.pgm nsteps [inhibit] out.pgm
+
+{\bf Description:} Parallel 2D binary thinning or ultimate skeleton. The parameter {\bf nsteps} gives, if positive, the number of parallel thinning steps to be processed. If the value given for {\bf nsteps} equals -1, the thinning is continued until stability.
+
+If the parameter {\bf inhibit} is given and is a binary image name, then the points of this image will be left unchanged.
+
+Reference: G. Bertrand and M. Couprie, \char`\"{}Two-dimensional thinning algorithms based on critical kernels\char`\"{}, {\em  Journal of Mathematical Imaging and Vision\/}, submitted, 2006. {\tt Preprint: IGM2006-02}.
+
+{\bf Types supported:} byte 2d
+
+{\bf Category:} topobin
+
+\begin{Desc}
+\item[Author:]Michel Couprie \end{Desc}

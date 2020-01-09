@@ -1,0 +1,23 @@
+\section{raw2pgm.c File Reference}
+\label{raw2pgm_8c}\index{raw2pgm.c@{raw2pgm.c}}
+converts from raw format into pgm format 
+
+
+
+\subsection{Detailed Description}
+converts from raw format into pgm format 
+
+{\bf Usage:} in.raw rs cs ds headersize nbytespervox littleendian [xdim ydim zdim] out.pgm
+
+{\bf Description:} Converts from raw format into pgm format.
+
+Parameters: \begin{itemize}
+\item {\bf in.pgm} : source file in raw format \item {\bf rs} (int32\_\-t): row size (number of voxels in a row) \item {\bf cs} (int32\_\-t): column size (number of voxels in a column) \item {\bf ds} (int32\_\-t): number of planes \item {\bf headersize} (int32\_\-t): size of the header in bytes (information in the header will be ignored) \item {\bf nbytespervox} (int32\_\-t): number of bytes per voxel (1, 2 or 4) \item {\bf littleendian} (int32\_\-t) 1: littleendian, 0: bigendian. Usual choice is 0. \item {\bf xdim} (float, optional) : gap (in the real world) between two adjacent voxels in a row. \item {\bf ydim} (float, optional) : gap (in the real world) between two adjacent voxels in a column. \item {\bf zdim} (float, optional) : gap (in the real world) between two adjacent planes.\end{itemize}
+{\bf Types supported:} byte 3D, int16\_\-t 3D, int32\_\-t 3D
+
+\begin{Desc}
+\item[Warning:]Signed integers are not supported.\end{Desc}
+{\bf Category:} convert
+
+\begin{Desc}
+\item[Author:]Michel Couprie \end{Desc}
